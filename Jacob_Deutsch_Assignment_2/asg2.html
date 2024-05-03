@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <div>
+      Jacob Deutsch<br>
+      jadeutsc@ucsc.edu<br>
+      <br>
+      Notes:<br>
+      It's a box fish. I added warm lighting from one side and cold lighting from the other. I added a spinning option.<br>
+    </div>
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    <br>
+    Cam Angle 1: <input type="range" min="-360" max="360" value="0" class="slider" id="angleSlide1">
+ 	Cam Angle 2: <input type="range" min="-360" max="360" value="0" class="slider" id="angleSlide2">
+ 	Cam Angle 3: <input type="range" min="-360" max="360" value="0" class="slider" id="angleSlide3">
+    <button id="spin_on">Spin ON</button>
+    <button id="spin_off">Spin OFF</button>
+    <br>
+    <br>
+    Top Fin Bottom: <input type="range" min="-10" max="10" value="0" class="slider" id="tfb"><br>
+    Top Fin Middle: <input type="range" min="-20" max="20" value="0" class="slider" id="tfm"><br>
+    Top Fin Top: <input type="range" min="-30" max="30" value="0" class="slider" id="tft"><br>
+   	<br>
+    Tail: <input type="range" min="-10" max="10" value="0" class="slider" id="tailSlide"><br>
+    Side Fins: <input type="range" min="35" max="55" value="45" class="slider" id="finSlide"><br>
+    <br>
+    Animation Off/On:<br>
+    <button id="animation_on">ON</button>
+    <button id="animation_off">OFF</button>
+    <br>
+    Swim Speed: <button><input type="range" min="0" max="10" value="1" class="slider" id="swim_speed"></button>
+    <br>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./support_scripts/Triangle.js"></script>
+    <script src="./support_scripts/Point.js"></script>
+    <script src="./support_scripts/Cube.js"></script>
+    <script src="./asg2.js"></script>
+  </body>
+</html>
