@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>asg5b</title>
+		<style>
+		</style>
+	</head>
+
+	<body>
+		Warning: Music (click anywhere to start the music)<br>
+		Notes:<br>
+		- Couldn't get the directional lighting working on Waluigi, or maybe the model is darker than it should be.. I think it might have to do with the FBX file itself<br>
+		- The floor is random!
+		<canvas id="c" style="width: 100%; height: 100%; display: block; margin-left: auto; margin-right: auto;"></canvas>
+
+		<audio loop id="groove" src="./assets/Super_Monkey_Ball_OST.mp3"></audio>
+
+		<script type="importmap">
+		{
+			"imports": {
+				"three": "./three/build/three.module.js",
+				"three/addons/": "./three/examples/jsm/"
+			}
+		}
+		</script>
+		<script src="./asg5b.js" type="module"></script>
+	</body>
+</html>
+
+
