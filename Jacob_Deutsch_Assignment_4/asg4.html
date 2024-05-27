@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Assignment 4</title>
+  </head>
+
+  <body onload="main()">
+    <div>
+      Jacob Deutsch<br>
+      jadeutsc@ucsc.edu<br>
+      <br>
+      Notes:<br>
+      I couldn't figure out the spotlight. Regardless, lighting is so cool!<br>
+    </div>
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <br>
+    <button id="norm_on">Normals ON</button>
+    <button id="norm_off">Normals OFF</button>
+    <button id="L_ani_on">Light Animation ON</button>
+    <button id="L_ani_off">Light Animation OFF</button><br>
+    Light X: <input type="range" min="-70" max="70" value="0" class="slider" id="LslideX">
+    Light Y: <input type="range" min="-70" max="70" value="45" class="slider" id="LslideY">
+    Light Z: <input type="range" min="-70" max="70" value="-70" class="slider" id="LslideZ">
+    Light On/Off:<br>
+    <button id="light_on">ON</button>
+    <button id="light_off">OFF</button>
+    <br>
+    <br>
+    <br>
+    Cam Angle: <input type="range" min="-360" max="360" value="0" class="slider" id="angleSlide1">
+    <br>
+    <br>
+    Animation On/Off:<br>
+    <button id="animation_on">ON</button>
+    <button id="animation_off">OFF</button>
+    <br>
+    Swim Speed: <button><input type="range" min="0" max="10" value="1" class="slider" id="swim_speed"></button>
+    <br>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+    <script src="./lib/cuon-utils.js"></script>
+    <script src="./lib/cuon-matrix.js"></script>
+    <script src="./lib/webgl-utils.js"></script>
+    <script src="./lib/webgl-debug.js"></script>
+    <script src="./support_scripts/Triangle.js"></script>
+    <script src="./support_scripts/Point.js"></script>
+    <script src="./support_scripts/Cube.js"></script>
+    <script src="./support_scripts/Sphere.js"></script>
+    <script src="./asg4.js"></script>
+  </body>
+</html>
