@@ -1,0 +1,27 @@
+# Blender MTL File: 'shrek_4_models.blend'
+# Material Count: 2
+
+newmtl DonkeyBody_Col
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd DonkeyBody_Col.png
+map_Bump DonkeyBody_Nrm.png
+map_d DonkeyBody_Col.png
+
+newmtl DonkeyHead_Col
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd DonkeyHead_Col.png
+map_Bump DonkeyHead_Nrm.png
